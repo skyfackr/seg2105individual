@@ -26,4 +26,5 @@
     <string name="btn43">.</string>
     <string name="btn44">*</string>
     <string name="btn5">=</string>
+    <string name="NumPadClickEvent">onNumberPadClick</string>
 </resources>
