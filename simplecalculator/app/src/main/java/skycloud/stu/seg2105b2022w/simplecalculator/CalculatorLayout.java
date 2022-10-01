@@ -89,7 +89,7 @@ public class CalculatorLayout extends Fragment {
                 logic.onNumberClick(0);
                 break;
             case R.id.btn43:
-                //.
+                logic.onPointClick();
                 break;
             case R.id.btn44:
                 logic.onOperationClick("*");
