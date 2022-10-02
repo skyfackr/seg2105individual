@@ -17,10 +17,13 @@
         <EditText
             android:id="@+id/displayer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
+            android:layout_height="80dp"
+            android:height="80dp"
+            android:clickable="false"
+            android:ems="15"
             android:inputType="textPersonName"
-            android:text="result" />
+            android:text="hello"
+            android:textSize="30sp" />
 
         <LinearLayout
             android:id="@+id/buttonrow_1"
