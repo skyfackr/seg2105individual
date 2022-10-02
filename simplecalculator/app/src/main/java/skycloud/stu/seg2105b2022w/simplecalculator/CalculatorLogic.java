@@ -99,7 +99,7 @@ public class CalculatorLogic {
     {
         System.out.println("Number: "+number);
         System.out.println("Last Number: "+lastNumber);
-        System.out.println("Current Operation: "+currentOperation);
+        System.out.println("Current Operation: "+(currentOperation.isEmpty()? "None":currentOperation));
         System.out.println("numberAfterPoint = " + numberAfterPoint);
         System.out.println("pointClicked = " + pointClicked);
     }
