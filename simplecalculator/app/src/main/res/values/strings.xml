@@ -27,4 +27,5 @@
     <string name="btn44">*</string>
     <string name="btn5">=</string>
     <string name="NumPadClickEvent">onNumberPadClick</string>
+    <string name="initialize_welcome">we1c0me</string>
 </resources>

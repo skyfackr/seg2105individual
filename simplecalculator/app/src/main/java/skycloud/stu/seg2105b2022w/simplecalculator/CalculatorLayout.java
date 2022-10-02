@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import java.util.Objects;
+
 
 public class CalculatorLayout extends Fragment {
 
@@ -29,6 +31,7 @@ public class CalculatorLayout extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ((TextView)(requireView().findViewById(R.id.displayer))).setText(getString(R.string.initialize_welcome));
 
 
     }
