@@ -34,11 +34,11 @@ public class CalculatorLogic {
     public void onOperationClick(String operation)
     {
         System.out.println("Operation Clicked: "+operation);
-        if (currentOperation.isEmpty())
+        if (currentOperation.isEmpty()||number!=0)
             calculate();
         else
         {
-            System.out.println("Operation already exist and will be overwritten");
+            System.out.println("Operation already exist and will be overwritten since number is 0");
         }
         currentOperation=operation;
         log();
