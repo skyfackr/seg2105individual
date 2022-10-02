@@ -40,7 +40,7 @@ public class CalculatorLogic {
     }
     private double  calculate()
     {
-        double actualNumber=0.1*(String.valueOf(numberAfterPoint).length()-2)+number;
+        double actualNumber=0.1*(String.valueOf(numberAfterPoint).length())*numberAfterPoint+number;
         switch (currentOperation)
         {
             case "+":
