@@ -34,7 +34,12 @@ public class CalculatorLogic {
     public void onOperationClick(String operation)
     {
         System.out.println("Operation Clicked: "+operation);
-        calculate();
+        if (currentOperation.isEmpty())
+            calculate();
+        else
+        {
+            System.out.println("Operation already exist and will be overwritten");
+        }
         currentOperation=operation;
         log();
     }
@@ -56,7 +61,8 @@ public class CalculatorLogic {
                 lastNumber=lastNumber/actualNumber;
                 break;
             case "":
-                lastNumber=actualNumber;
+                if (actualNumber!=0)
+                    lastNumber=actualNumber;
                 break;
         }
         number=0;
