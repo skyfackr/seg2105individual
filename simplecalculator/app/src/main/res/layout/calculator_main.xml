@@ -20,8 +20,13 @@
             android:layout_height="80dp"
             android:height="80dp"
             android:clickable="false"
+            android:editable="false"
             android:ems="15"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
             android:inputType="textPersonName"
+            android:linksClickable="false"
+            android:longClickable="false"
             android:text="hello"
             android:textSize="30sp" />
 
