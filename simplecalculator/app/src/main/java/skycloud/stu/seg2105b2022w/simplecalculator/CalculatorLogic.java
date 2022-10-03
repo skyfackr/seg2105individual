@@ -27,7 +27,7 @@ public class CalculatorLogic {
         {
             numberAfterPoint*=10;
             numberAfterPoint+=number;
-            layout.updateDisplay(String.valueOf(0.1*(String.valueOf(numberAfterPoint).length()-2)+number));
+            layout.updateDisplay(String.valueOf(0.1*(String.valueOf(numberAfterPoint).length())*numberAfterPoint+number));
         }
         log();
     }
