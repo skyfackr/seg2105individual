@@ -103,6 +103,7 @@ public class CalculatorLogic {
         System.out.println("numberAfterPoint = " + numberAfterPoint);
         System.out.println("pointClicked = " + pointClicked);
         System.out.println("actualNumber = "+getActualNumber());
+        System.out.println("====================================");
     }
     private double getActualNumber()
     {
