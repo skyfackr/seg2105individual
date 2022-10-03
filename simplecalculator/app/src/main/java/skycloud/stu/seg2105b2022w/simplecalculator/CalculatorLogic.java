@@ -27,7 +27,7 @@ public class CalculatorLogic {
         {
             numberAfterPoint*=10;
             numberAfterPoint+=number;
-            layout.updateDisplay(String.valueOf(0.1*(String.valueOf(numberAfterPoint).length())*numberAfterPoint+number));
+            layout.updateDisplay(String.valueOf(getActualNumber()));
         }
         log();
     }
@@ -45,7 +45,7 @@ public class CalculatorLogic {
     }
     private double  calculate()
     {
-        double actualNumber=0.1*(String.valueOf(numberAfterPoint).length())*numberAfterPoint+number;
+        double actualNumber=getActualNumber();
         switch (currentOperation)
         {
             case "+":
@@ -102,5 +102,10 @@ public class CalculatorLogic {
         System.out.println("Current Operation: "+(currentOperation.isEmpty()? "None":currentOperation));
         System.out.println("numberAfterPoint = " + numberAfterPoint);
         System.out.println("pointClicked = " + pointClicked);
+        System.out.println("actualNumber = "+getActualNumber());
+    }
+    private double getActualNumber()
+    {
+        return 0.1*(String.valueOf(numberAfterPoint).length())*numberAfterPoint+number;
     }
 }
