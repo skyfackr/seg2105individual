@@ -9,5 +9,5 @@
         android:id="@+id/FirstFragment"
         android:name="skycloud.stu.seg2105b2022w.simplecalculator.CalculatorLayout"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/calculator_main"/>
+        tools:layout="@layout/calculator_main" />
 </navigation>

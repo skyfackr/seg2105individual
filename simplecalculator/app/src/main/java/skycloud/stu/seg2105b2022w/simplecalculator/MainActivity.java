@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+    private CalculatorLogic logic;
+
+    public MainActivity() {
+        logic = new CalculatorLogic(this);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,15 +68,10 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-    private CalculatorLogic logic;
 
-    public MainActivity() {
-        logic = new CalculatorLogic(this);
-    }
     public void onNumberPadClick(View view) {
         int id = view.getId();
-        switch (id)
-        {
+        switch (id) {
             case R.id.btn11:
                 logic.onNumberClick(1);
                 break;
@@ -125,8 +125,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
-    public void updateDisplay(String text)
-    {
+
+    public void updateDisplay(String text) {
         TextView display = findViewById(R.id.displayer);
         display.setText(text);
     }
