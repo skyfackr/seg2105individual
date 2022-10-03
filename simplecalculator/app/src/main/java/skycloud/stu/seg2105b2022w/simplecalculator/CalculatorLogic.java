@@ -107,6 +107,6 @@ public class CalculatorLogic {
     }
     private double getActualNumber()
     {
-        return 0.1*(String.valueOf(numberAfterPoint).length())*numberAfterPoint+number;
+        return Math.pow(0.1,(String.valueOf(numberAfterPoint).length()))*numberAfterPoint+number;
     }
 }
