@@ -21,6 +21,10 @@ public class RootlayoutActivity extends AppCompatActivity {
             mapIntent.setPackage("com.google.android.apps.maps");
             startActivity(mapIntent);
         });
+        findViewById(R.id.avator).setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+            startActivity(intent);
+        });
     }
 
 }
