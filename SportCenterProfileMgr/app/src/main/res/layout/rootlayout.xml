@@ -7,19 +7,70 @@
     tools:context=".RootlayoutActivity">
 
     <LinearLayout
-        android:id="@+id/imageLayout"
+        android:id="@+id/editLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/editLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-16dp"></LinearLayout>
+        app:layout_constraintVertical_bias="0.83">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/teamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/teamNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter team name here" />
+
+            <TextView
+                android:id="@+id/teamNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TeamName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/teamZIP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/teamZIPInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Postal code" />
+
+            <TextView
+                android:id="@+id/teamZIPLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Postal Code" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/editLayout"
+        android:id="@+id/btnLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageLayout"></LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/mapBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Map" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
