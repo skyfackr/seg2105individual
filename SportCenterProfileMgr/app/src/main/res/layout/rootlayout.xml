@@ -15,19 +15,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.83">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
         <ImageView
             android:id="@+id/avator"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            tools:srcCompat="@android:drawable/ic_dialog_info" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            tools:srcCompat="@drawable/ic_launcher_background" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/teamName"
