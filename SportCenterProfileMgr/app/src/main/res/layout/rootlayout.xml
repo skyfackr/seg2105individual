@@ -23,7 +23,7 @@
             android:id="@+id/avator"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@android:drawable/ic_dialog_info" />
 
         <Space
             android:layout_width="match_parent"
