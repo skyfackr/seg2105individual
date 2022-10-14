@@ -15,7 +15,7 @@ public class RootlayoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rootlayout);
         findViewById(R.id.mapBtn).setOnClickListener(v -> {
-            EditText address = findViewById(R.id.teamZIP);
+            EditText address = (EditText) findViewById(R.id.teamZIPInput);
             Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + address.getText().toString());
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
